@@ -13,4 +13,4 @@ KLAYOUT_GDS_FILE := $(firstword $(wildcard $(REAL_OBJ_DIR)/par-rundir/*.gds/))
 
 # TODO: un hard code? Make hook?
 open-klayout-gds:
-  $(KLAYOUT) -l /home/projects/ee477.2025wtr/cad/pdk/sky130A/libs.tech/klayout/sky130A.lyp $(KLAYOUT_GDS_FILE)
+	$(KLAYOUT) -l /home/projects/ee477.2025wtr/cad/pdk/sky130A/libs.tech/klayout/sky130A.lyp $(KLAYOUT_GDS_FILE)
